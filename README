@@ -1,0 +1,61 @@
+
+# Hospital Management System API
+
+This Hospital Management System allows different user roles to perform specific actions within the system.
+
+## Functionalities
+
+### 1. Registration of Patients
+
+- **Frontend Desk**: Users with the role of the Frontend Desk can register new patients who do not already exist in the system.
+  - Fields required for patient registration include:
+    - Patient ID
+    - Surname
+    - Othernames
+    - Gender
+    - Phone number
+    - Residential address
+    - Emergency contact name
+    - Emergency contact number
+    - Relationship with the patient
+
+### 2. Encounter Management
+
+- **Front Desk**: The Front Desk users can initiate visitations (encounters) for patients.
+  - Fields required for encounter initiation include:
+    - Patient ID
+    - Date
+    - Time
+    - Type of encounter (Emergency, OPD, Specialist Care)
+
+### 3. Vital Information Recording
+
+- **Nurse**: Nurses are allowed to record vital information for patients.
+  - Vital signs to be recorded include:
+    - Blood pressure (BP)
+    - Temperature
+    - Pulse
+    - Oxygen saturation (SpO2)
+
+### 4. Patient List Viewing
+
+- **Doctor**: Doctors can view the list of patients available in the system.
+
+### 5. Patient Details Viewing
+
+- **Doctor**: Doctors have access to view detailed information about specific patients.
+
+## Technologies Used
+
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Frontend**: (Add your frontend technologies here if applicable)
+- **API**: RESTful API
+
+## Installation and Usage
+
+1. Clone this repository.
+2. Install dependencies using \`npm install\`.
+3. Set up MongoDB and configure the connection in the \`.env\` file.
+4. Run the server using \`npm start\`.
+
